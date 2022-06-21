@@ -41,7 +41,7 @@ body{
     margin-right: 30px;
 }
 
-.fa-align-justify{
+.burger, .img-principal-responsive{
     display: none;
 }
 
@@ -129,30 +129,31 @@ h2{
     text-align: center;
 }
 
-    form{
-        padding: 20px 0;
-        position: relative;
-        z-index: 2;
-    }
-    main input{
-		display: block;
-		outline: 0;
-		width: 350px;
-        background-color: #3C2313;
-		border-radius: 10px;
-		padding: 10px 15px;
-		margin: 5px auto 5px auto;
-		display: block;
-		text-align: center;
-		font-size: 18px;
-    }
+form{
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+main input{
+	display: block;
+	outline: 0;
+	width: 350px;
+    background-color: #3C2313;
+	border-radius: 10px;
+	padding: 10px 15px;
+	margin: 5px auto 5px auto;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+}
 .enviar{
     background-color: #F0A83E;
     color:white;
     border-radius: 15px;
     width: 110px;
     height: 34px;
- text-align: center;
+    text-align: center;
 
 }
 
@@ -204,13 +205,13 @@ h3{
 }
 
 footer input{
-		outline: 0;
-		width: 350px;
-        background-color: white;
-		border-radius: 10px;
-		padding: 10px 15px;
-		margin: 5px auto 5px auto;
-		font-size: 18px;
+	outline: 0;
+	width: 350px;
+    background-color: white;
+	border-radius: 10px;
+	padding: 10px 15px;
+	margin: 5px auto 5px auto;
+	font-size: 18px;
 }
 
 .footer-div{
@@ -241,4 +242,107 @@ footer input{
 .logo2{
     padding-left: 550px;
 
+}
+
+
+@media (max-width:800px){
+
+
+    
+    .nav-superior,.nav-home, .img-principal {
+        display: none;
+    }
+    .encabezado{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-right: 50px;
+    }
+   
+    .burger {
+        display: flex;
+        font-size: 50px;
+    
+    }
+
+    .nav-inferior{
+        width: 100%;
+        display: flex;
+        
+    }
+  
+     .img-principal-responsive{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .text-banner1{
+        position: absolute;
+        top: 150px;
+        left: 55px;
+        font-size: 25px;    
+        height: 40px;
+     
+    }
+    .boton-banner{
+        width: 150px;
+        height: 50px;
+        position: absolute;
+        top: 250px;
+        left: 200px;
+    }
+
+    .ofertas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        width: 100%;
+
+    }
+    .footer-superior{
+        height: 101px;
+    }
+
+    main input{
+		width: 250px;
+    }
+    .enviar{
+        width: 170px;
+        height: 44px;
+
+    }
+    .reset{
+
+        width: 170px;
+        height: 44px;
+
+    }
+    footer input{
+
+		width:200px;
+        background-color: white;
+		
+    }
+    .suscribite{
+        width: 90px;
+        height: 40px;
+        margin-right:40px ;
+        
+    }
+   .footer-medio{
+       height: 320px;
+   }
+   .footer-inferior{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
 }
